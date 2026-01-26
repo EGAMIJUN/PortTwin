@@ -1,0 +1,30 @@
+cat <<EOT >> .gitignore
+
+# --- Solana & Anchor ---
+.anchor
+target/
+**/*.rs.bk
+node_modules/
+test-ledger/
+.yarn/
+.pnp.*
+
+# --- Security (Keys) ---
+# JSONは基本全部無視！(鍵漏洩防止)
+**/*.json
+
+# ただし、設定ファイルだけは許可する（サブフォルダ含む）
+!**/package.json
+!**/package-lock.json
+!**/tsconfig.json
+!**/Anchor.toml
+
+# --- Next.js ---
+.next/
+out/
+build/
+.DS_Store
+.env
+.env*.local
+
+EOT
