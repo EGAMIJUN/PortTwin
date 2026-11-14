@@ -31,6 +31,7 @@
     "**/toml": "^5.0.1",
     "ts-mocha/ts-node/diff": "^3.5.1",
     "**/jayson/ws": "^7.5.11",
-    "**/rpc-websockets/ws": "^8.21.0"
+    "**/rpc-websockets/ws": "^8.21.0",
+    "**/jayson": "^5.0.0"
   }
 }
